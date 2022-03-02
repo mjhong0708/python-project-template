@@ -1,3 +1,24 @@
+# ====== If use poetry ======
+[tool.poetry]
+name = "project_name"
+version = "0.1.0"
+description = "Description of the project"
+authors = ["Minjoon Hong <mjhong0708@yonsei.ac.kr>"]
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^3.0.0"
+mypy = "^0.931"
+flake8 = "^4.0.1"
+black = "^22.1.0"
+isort = "^5.10.1"
+ipykernel = "^6.9.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# Black
 [tool.black]
 line-length = 120
 target-version = ['py38', 'py39', 'py310']
